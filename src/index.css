@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+   margin-top: 300px;
+}
+
+.box {
+    width: 550px;
+    height: 200px;
+    animation-duration: 2000ms;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.black {
+    background-color: black;
+}
+
+.salmon {
+    background-color: salmon;
+}
+
+
+.carousel-control-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.carousel-control {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #4e07b0;
+    background-color: transparent;
+    border: 1px solid lightblue;
+    border-radius: 48px;
+    padding: 12px 32px;
+    transition: 0.04s;
+}
+
+.carousel-control:hover {
+    color: lightblue;
+}
+
+.carousel-control::before {
+    content: '';
+    position: absolute;
+    height: 52px;
+    width: 82px;
+    z-index: -1;
+    border-radius: 48px;
+    background-color: #3bd9d9;
+    transform: translate(-24px, -8px);
+    transition: 0.4s;
+}
+
+.carousel-control:hover::before {
+    background-color: #b527cf;
+    transform: translate(-33px, -13px);
+}
